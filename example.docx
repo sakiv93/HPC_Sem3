@@ -1,0 +1,10 @@
+Username for 'https://github.com': sakiv93
+Password for 'https://sakiv93@github.com': 
+Counting objects: 2, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 227 bytes | 113.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sakiv93/HPC_Sem3.git
+   9318977..ca06dfe  master -> master
+error: update_ref failed for ref 'refs/remotes/origin/master': cannot lock ref 'refs/remotes/origin/master': unable to resolve reference 'refs/remotes/origin/master': reference broken
