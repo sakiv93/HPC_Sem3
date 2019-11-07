@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    float matrix_a[20][20], matrix_b[20][20], matrix_m[20][20];
-    int i,j,k, sum,a,b,c,d;
+    double sum,matrix_a[20][20], matrix_b[20][20], matrix_m[20][20];
+    int i,j,k,a,b,c,d;
     printf("Enter the number of rows of matrix_a:\n");
     scanf("%d",&a);
     printf("Enter the number of coloums of matrix_a:\n");
@@ -15,7 +15,7 @@ int main()
         for (j=1;j<(b+1);j++)
         {
             printf("Enter the values of matrix_a[%d][%d]:",i,j);
-            scanf("%f",&matrix_a[i][j]);
+            scanf("%lf",&matrix_a[i][j]);
         }
     }
     printf("matrix_a is:\n");
@@ -23,7 +23,7 @@ int main()
     {
         for (j=1;j<(b+1);j++)
         {
-            printf("%f\t",matrix_a[i][j]);
+            printf("%lf\t",matrix_a[i][j]);
         }
         printf("\n");
     }
@@ -47,7 +47,7 @@ int main()
             for (j=1;j<(d+1);j++)
             {
                 printf("Enter the values of matrix_a[%d][%d]:",i,j);
-                scanf("%f",&matrix_b[i][j]);
+                scanf("%lf",&matrix_b[i][j]);
             }
         }
         printf("matrix_b is:\n");
@@ -55,7 +55,7 @@ int main()
         {
             for (j=1;j<(d+1);j++)
             {
-                printf("%f\t",matrix_b[i][j]);
+                printf("%lf\t",matrix_b[i][j]);
             }
             printf("\n");
         }
@@ -70,7 +70,7 @@ int main()
                     sum = sum + (matrix_a[i][k] * matrix_b[k][j]) ;
                 }
                 matrix_m[i][j]=sum;
-                sum=0;
+                sum=0.0;
             }
             
 
@@ -81,7 +81,7 @@ int main()
         {
             for (j=1;j<(d+1);j++)
             {
-                printf("%f\t",matrix_m[i][j]);
+                printf("%lf\t",matrix_m[i][j]);
             }
             printf("\n");
         }
